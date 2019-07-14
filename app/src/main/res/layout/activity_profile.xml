@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/alcprofile_imageView"
+        android:layout_width="373dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="joeshem's image"
+        app:layout_constraintBottom_toTopOf="@+id/alcprofile_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/okall" />
+
+    <TextView
+        android:id="@+id/alcprofile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/capsuula"
+        android:textStyle="bold"
+        android:text="Okall Joeshem"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/alcprofile_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alcprofile_imageView" />
+
+    <TextView
+        android:id="@+id/alcprofile_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/capsuula"
+        android:text="Track: Android"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/alcprofile_country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alcprofile_divider" />
+
+    <View
+        android:id="@+id/alcprofile_divider"
+        android:layout_width="386dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#5F0707"
+        app:layout_constraintBottom_toTopOf="@+id/alcprofile_track"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alcprofile_imageView" />
+
+    <TextView
+        android:id="@+id/alcprofile_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/capsuula"
+        android:text="Country : Kenya"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/alcprofile_email"
+        app:layout_constraintEnd_toEndOf="@+id/alcprofile_track"
+        app:layout_constraintStart_toStartOf="@+id/alcprofile_track"
+        app:layout_constraintTop_toBottomOf="@+id/alcprofile_track" />
+
+    <TextView
+        android:id="@+id/alcprofile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="@font/capsuula"
+        android:text="Email: okalljosh@gmail..com"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/alcprofile_phone"
+        app:layout_constraintEnd_toEndOf="@+id/alcprofile_country"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/alcprofile_country"
+        app:layout_constraintTop_toBottomOf="@+id/alcprofile_country" />
+
+    <TextView
+        android:id="@+id/alcprofile_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/capsuula"
+        android:text="Phone Number: 254716460015"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/alcprofile_slack"
+        app:layout_constraintStart_toStartOf="@+id/alcprofile_email"
+        app:layout_constraintTop_toBottomOf="@+id/alcprofile_email" />
+
+    <TextView
+        android:id="@+id/alcprofile_slack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/capsuula"
+        android:text="Slack Username: @joeshem"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/alcprofile_phone"
+        app:layout_constraintTop_toBottomOf="@+id/alcprofile_phone" />
+</android.support.constraint.ConstraintLayout>
